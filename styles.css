@@ -1,13 +1,15 @@
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    background-color:antiquewhite;
+}    
 
+/* HEADER STYLES */
 header {
     width: 100%;
     background-color: olivedrab;
     color: white;
-    height: 75px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,4 +26,30 @@ header svg {
 
 header svg path {
     fill: currentColor;
+}
+
+/* BOOKSHELF STYLES */
+.bookshelf {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 1px;
+}
+
+/* BOOK STYLES */
+.book {
+    width: 75px;
+    height: 200px;
+    background-color: orange;
+    border: 3px solid black;
+    border-radius: 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
