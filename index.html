@@ -22,11 +22,25 @@
     <main>
         <div class="bookshelf">
             <div class="book">
-                <p>Inherent Vice</p>
+                <div class="basicBookInfo">
+                    <p class="title">Inherent Vice</p>
+                    <p class="author">Thomas Pychon</p>
+                </div>
+                <div class="extraBookInfo">
+                    <p class="genre">Noir</p>
+                    <p class="date">2009</p>
+                </div>
             </div>
             <div class="book">
-                <p>Inherent Vice</p>
-            </div>          
+                <div class="basicBookInfo">
+                    <p class="title">Inherent Vice</p>
+                    <p class="author">Thomas Pychon</p>
+                </div>
+                <div class="extraBookInfo">
+                    <p class="genre">Noir</p>
+                    <p class="date">2009</p>
+                </div>
+            </div>       
         </div>
         <div id="container">
             <div id="form">
@@ -45,8 +59,8 @@
                         <input type="text" id="genre" />
                     </div>
                     <div>
-                        <label for="datePublished">Date Published</label>
-                        <input type="text" id="datePublished"/>
+                        <label for="datePublished">Date Published: </label>
+                        <input type="date" id="datePublished"/>
                     </div>
                     <div>
 

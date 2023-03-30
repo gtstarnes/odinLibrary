@@ -44,17 +44,58 @@ header svg path {
 /* BOOK STYLES */
 .book {
     width: 75px;
-    height: 200px;
+    height: 250px;
     background-color: rosybrown;
     border: 3px solid black;
     border-radius: 10px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+    overflow:hidden;   
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.basicBookInfo {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    width: 100%;
+    padding-left: 20px;
+    height: 66%;
+    margin-top: 5px;
+}
+
+.title {
+    font-weight: bolder;
     font-size: 1.2rem;
+}
+
+.author {
+    font-size: 1.1rem;
+}
+
+.genre {
     font-weight: bold;
+}
+
+.date{
+    margin-top: -10px;
+}
+
+.extraBookInfo {
+    margin-top: 40px;
+    justify-self: flex-end;
+    height: 33%;
+    width: 100%;
+}
+
+.basicBookInfo, .extraBookInfo {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    text-align: center;
 }
 
 .book:hover {
@@ -62,13 +103,10 @@ header svg path {
 }
 
 
-
 /* FORM STYLES */
 #container, #form, form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #container {
@@ -81,7 +119,9 @@ header svg path {
     position: fixed; 
     z-index: 1000;
     border: 1px solid black;
-    visibility: hidden;
+    visibility: hidden;    
+    justify-content: center;
+    align-items: center;
 }
 
 #form {
@@ -92,8 +132,9 @@ header svg path {
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0,0,0,25%);
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
-
 
 #form p {
     margin-top: -5px;
@@ -117,10 +158,10 @@ form button:hover {
     cursor: pointer;
 }
 
-
 form {
     row-gap: 10px;;
 }
+
 
 /* POP UP BUTTON STYLES */
 #popUp {
