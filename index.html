@@ -21,7 +21,7 @@
     </header>
     <main>
         <div class="bookshelf">
-            <div class="book">
+            <div class="book" id="book1">
                 <p>Inherent Vice</p>
             </div>
             <div class="book">
@@ -38,14 +38,23 @@
                     </div>
                     <div>
                         <label for="author">Author: </label>
-                        <input type="text" id="author" />
+                        <input type="text" id="author" />   
                     </div>
                     <div>
                         <label for="genre">Genre: </label>
                         <input type="text" id="genre" />
                     </div>
+                    <div>
+                        <label for="datePublished">Date Published</label>
+                        <input type="text" id="datePublished"/>
+                    </div>
+                    <div>
 
-                    <button type="submit" value="Add Book" id="addBook">Add Book</button>
+                    </div>
+                    <div id="buttons">
+                        <button type="submit" value="Add Book" id="addBook">Add Book</button>
+                        <button type="button" value="cancel" id="cancel">Cancel</button>
+                    </div>
                 </form>
             </div>
         </div>

@@ -45,7 +45,7 @@ header svg path {
 .book {
     width: 75px;
     height: 200px;
-    background-color: orange;
+    background-color: rosybrown;
     border: 3px solid black;
     border-radius: 10px;
     writing-mode: vertical-rl;
@@ -108,11 +108,13 @@ header svg path {
     border-radius: 10px;
     font-weight: bold;
     border: none;
+    margin-right: 5px;
 }
 
-#addBook:hover {
+form button:hover {
     cursor: pointer;
 }
+
 
 form {
     row-gap: 10px;;
