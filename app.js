@@ -12,6 +12,7 @@ function makeVisible() {
 
 function makeHidden() {
     container.style.visibility = "hidden";
+    document.getElementById('bookForm').reset();
 }
 
 function listFunctions(list) {
@@ -41,7 +42,6 @@ function makeNew() {
     let author = document.getElementById('author').value;
     let genre = document.getElementById('genre').value;
     let year = document.getElementById('year').value;
-    
     library.push(new Book(title,author,genre,year));
     addBookToLibrary(library);
 }
@@ -79,7 +79,7 @@ function addBookToLibrary(library) {
         content = document.createTextNode(library[i].year);
         bookYear.appendChild(content);
 
-
+        // Adds divs to each other
         basicInfo.appendChild(bookTitle);
         basicInfo.appendChild(bookAuthor);
         bookDiv.appendChild(basicInfo);
