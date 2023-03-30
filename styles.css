@@ -46,7 +46,7 @@ header svg path {
     width: 75px;
     height: 250px;
     background-color: rosybrown;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     display: flex;
     flex-direction:column;
