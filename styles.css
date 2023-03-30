@@ -57,6 +57,10 @@ header svg path {
     font-weight: bold;
 }
 
+.book:hover {
+    cursor: grab;
+}
+
 /* FORM STYLES */
 #container, #form, form {
     display: flex;
@@ -69,10 +73,10 @@ header svg path {
     background-color: rgba(0,0,0,4%);
     backdrop-filter: blur(5px);
     width: 100%;
-    height: 100vh;
-    position: fixed;
-    top:0;
-    left:0;   
+    height: 100%;
+    left: 0;
+    top: 100px;
+    position: fixed; 
     z-index: 1000;
     border: 1px solid black;
     visibility: hidden;
@@ -96,12 +100,18 @@ header svg path {
 
 }
 
-#form button {
-    height: 20px;
+#addBook {
+    height: 30px;
     width: 80px;
     background-color: olivedrab;
     color: white;
     border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+#addBook:hover {
+    cursor: pointer;
 }
 
 form {
@@ -110,7 +120,20 @@ form {
 
 /* POP UP BUTTON STYLES */
 #popUp {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: olivedrab;
+    color: antiquewhite;
+    font-size: 3rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0,0,0,25%);
+}
+
+#popUp {
+    cursor: pointer;
 }
