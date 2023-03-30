@@ -20,7 +20,7 @@
         </svg>
     </header>
     <main>
-        <div class="bookshelf">
+        <div class="bookshelf" id="bookshelf">
             <div class="book">
                 <div class="basicBookInfo">
                     <p class="title">Inherent Vice</p>
@@ -44,7 +44,7 @@
         </div>
         <div id="container">
             <div id="form">
-                <form>
+                <form onsubmit="event.preventDefault();">
                     <p>Add a new book to your shelf</p>
                     <div>
                         <label for="title">Title: </label>
